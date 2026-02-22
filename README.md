@@ -78,6 +78,7 @@ Schematic
 
 
 DC O.P IMAGE
+![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20231454.png)
 
 
 conclusion :
@@ -97,9 +98,11 @@ Procedure
 3) And run simulation and note  Vin and Vout peak to peak voltages
 4) calculate the gain(Vout/vin) from the obtained voltages
 
-output graph
+output graph:
+![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20231148.png)
 
 input graph
+![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20231259.png)
 
 
  calculation for Gain calculations:
@@ -128,8 +131,7 @@ Avdb =20 log(Av)
 
 # AC ANALYSIS
 
-
-image
+![Image description](https://github.com/ranjan815/lic/blob/main/WhatsApp%20Image%202026-02-22%20at%202.26.31%20PM.jpeg)
 
 
 Procedure:
