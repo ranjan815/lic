@@ -81,7 +81,7 @@ DC O.P IMAGE
 ![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20231454.png)
 
 
-conclusion :
+Conclusion :
 
 Based on the initial design equations, the calculated values were W = 1.07 um and RD = 3.75 kΩ.
 However, to meet the necessary operating conditions, the transistor width was adjusted.
@@ -98,14 +98,14 @@ Procedure
 3) And run simulation and note  Vin and Vout peak to peak voltages
 4) calculate the gain(Vout/vin) from the obtained voltages
 
-output graph:
+Output graph:
 ![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20231148.png)
 
-input graph
+Input graph
 ![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20231259.png)
 
 
- calculation for Gain calculations:
+ Calculation for Gain calculations:
 
 Vin =19.8mV
 vout =44.3mv
