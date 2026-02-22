@@ -145,7 +145,7 @@ Avdb =20 log(Av)
 
 
 
-![Image description](https://github.com/ranjan815/lic/blob/main/WhatsApp%20Image%202026-02-22%20at%202.26.31%20PM.jpeg)
+
 
 
 Procedure:
@@ -155,6 +155,8 @@ Procedure:
 
 Output expected graph:
 
+
+![Image description](https://github.com/ranjan815/lic/blob/main/WhatsApp%20Image%202026-02-22%20at%202.26.31%20PM.jpeg)
 
 
 
