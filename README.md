@@ -12,9 +12,12 @@
  the CS amplifier, three types of analyses are done: DC Analysis establishes and verifies the
  proper operating bias point of the MOSFET. Transient Analysis observes the time-domain behavior
  and determines the voltage gain of the amplifier. AC Analysis examines the frequency response
- characteristics and calculates the bandwidth of the circuit.
+ characteristics and calculates the bandwidth of the circuit.  
+ 
 
  DESIGN CALCULATIONS
+ 
+ 
 
 Given:
 Supply voltage,
@@ -52,17 +55,20 @@ unCox ≈ 2.359 x10^-4
 as MOSFET operating in saturation region, the Drain current euqation will be :
 
 ID = (1/2) unCox (W/L) (Vov)^2
-
 W = L[2ID / [µnCox (Vov)^2]]
-
 W = 5.95 × (180 × 10^-9)
-
 W =1.07 x 10^-6
 
+
 Schematic
+
 ![Image description](https://github.com/ranjan815/lic/blob/main/Screenshot%202026-02-22%20230552.png)
 
+
+
 # DC ANALYSIS
+
+
 
 1)Open New Schematic to create a new circuit
 2) place NMOSN transistor on the screen from the componenets.
@@ -89,7 +95,11 @@ The goal was to achieve a drain voltage of 0.75 V and a drain current of 200 uA.
 width parameter, we successfully established the desired Q-point. The final optimized width needed 
 to maintain ID = 200 uA at a drain voltage of 0.75 V was found to be W = 1.572 um.
 
+
+
 # TRANSIENT ANALYSIS
+
+
 
 Procedure
 
@@ -129,7 +139,11 @@ Avdb =20 log(Av)
 =8.6
 
 
+
+
 # AC ANALYSIS
+
+
 
 ![Image description](https://github.com/ranjan815/lic/blob/main/WhatsApp%20Image%202026-02-22%20at%202.26.31%20PM.jpeg)
 
