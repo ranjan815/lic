@@ -29,5 +29,44 @@ theoretical values.
 
 Circuit 1 :
 
+DESIGN CALCULATIONS
+
+Given: Supply voltage, VDD = 1.5 V Chosen drain current, ID = 200 uA and threshold voltage = 0.36v
+consider Vov =0.25v so that both the MOSFET's operates in saturation region 
+
+for NMOS(M1):
+
+      Vov = Vgs - Vt
+      0.25 = Vgs - 0.36
+      Vgs = 6.1v
+
+      Vgs = Vg - Vs
+      Vg = Vgs + Vs 
+         Vg = 0.81v
+
+we know that ID = (1/2) un cox (W/L) Vov^2
+            W = (2 x 180n x 200 x 10^-6)/ (273.89 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
+            W =   
+
+for PMOS(M2): 
+ Vov = Vsg - Vt
+ Vsg = 0.25 + 0.39
+Vsg = 0.64v
+
+Vg = Vs + Vsg
+Vg = 0.86v
+
+ ID = (1/2) up cox (W/L) Vov^2
+W = (2 x 180n x 200 x 10^-6)/ (115.6 x 10^-3 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
+w = 
+
+
+DC ANALYSIS:
+
+
+schematic :
+
+
+
 
  
