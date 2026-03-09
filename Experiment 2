@@ -67,6 +67,25 @@ DC ANALYSIS:
 schematic :
 
 
+| Transistor | Id (mA) | Vgs (V) | Vth (V) | Vds (V) | Vdsat (V) | Region |
+| Transistor | ID (mA) | VGS (V) | VTH (V) | VDS (V) | VDSAT (V) | Region |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **M1 (NMOS)** | 0.30 | 0.60 | 0.476 | 0.754 | 0.099 | Saturation |
+| **M2 (NMOS)** | 0.30 | 0.61 | 0.500 | 0.300 | 0.094 | Saturation |
+| **M3 (PMOS)** | -0.30 | -0.64 | -0.509 | -0.445 | -0.122 | Saturation |
+
+
+**DC Bias Voltages:**
+* **Input Bias (Vin):** 0.90V
+* **Output Bias (Vout):** 1.054V
+**Total DC Power Dissipation:**
+Since the entire circuit consists of a single branch drawing 0.30 mA from the 1.50V supply, the total DC power is calculated as:
+$$P_{DC} = V_{DD} \times I_D = 1.50\text{ V} \times 0.30\text{ mA} = 0.45\text{ mW} \text{ (or } 450\text{ }\mu\text{W)}$$
+
+**Verification of Biasing:**
+* **Input Bias (VIN):** 0.90V
+* **Output Bias (VOUT):** 1.054V
+
 
 
  
