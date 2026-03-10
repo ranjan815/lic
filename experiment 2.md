@@ -67,5 +67,13 @@ DC ANALYSIS:
 schematic :
 
 
+based on the initial design equations, the calculated values of  Width of both the mosfet were w1=  um and w2=  um RD = 3.75 kΩ.
+However, to meet the necessary operating conditions, the transistor width was adjusted.
+The goal was to achieve a drain voltage of 0.75 V and a drain current of 200 uA. By changing the
+width parameter, we successfully established the desired Q-point. The final optimized width needed 
+to maintain ID = 200 uA at a drain voltage of 0.75 V was found to be W = 1.572 um.
+
+
+
 
 
