@@ -73,7 +73,7 @@ The goal was to achieve a drain voltage of   V and a drain current of 200 uA. By
 width parameter, we successfully established the desired Q-point. The final optimized width needed 
 to maintain ID = 200 uA at output voltage of   V was found to be W1 =  um and w2=  um
 
-# TEANSIENT ANALYSIS
+# TRANSIENT ANALYSIS
 
 
 Procedure
@@ -82,6 +82,19 @@ Procedure
 2) Place transient command .tran and set stop time as 5m.
 3) And run simulation and note  Vin and Vout peak to peak voltages
 4) calculate the gain(Vout/vin) from the obtained voltages
+
+ ** INPUT VOLTAGE
+
+
+
+ ** OUTPUT VOLTAGE
+
+
+ Procedure:
+
+ 1) apply the ac analysis command ( .ac dec 100 0.1 100G)
+ 2) Run the simulation and observe the frequency responce 
+
 
 
 
