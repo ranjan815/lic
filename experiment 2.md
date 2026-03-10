@@ -76,6 +76,14 @@ to maintain ID = 200 uA at output voltage of   V was found to be W1 =  um and w2
 # TEANSIENT ANALYSIS
 
 
+Procedure
+
+1) apply input voltage as SINE(__ 10m 1000) to gate terminal
+2) Place transient command .tran and set stop time as 5m.
+3) And run simulation and note  Vin and Vout peak to peak voltages
+4) calculate the gain(Vout/vin) from the obtained voltages
+
+
 
 
 
