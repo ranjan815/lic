@@ -61,7 +61,7 @@ W = (2 x 180n x 200 x 10^-6)/ (115.6 x 10^-3 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
 w = 
 
 
-DC ANALYSIS:
+# DC ANALYSIS:
 
 
 schematic :
@@ -72,6 +72,9 @@ However, to meet the necessary operating conditions, the transistor width was ad
 The goal was to achieve a drain voltage of   V and a drain current of 200 uA. By changing the
 width parameter, we successfully established the desired Q-point. The final optimized width needed 
 to maintain ID = 200 uA at output voltage of   V was found to be W1 =  um and w2=  um
+
+# TEANSIENT ANALYSIS
+
 
 
 
