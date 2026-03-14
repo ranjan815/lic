@@ -97,7 +97,33 @@ Procedure
  1) apply the ac analysis command ( .ac dec 100 0.1 100G)
  2) Run the simulation and observe the frequency responce
 
-# AC ANALYSIS
+
+**Calculation for Gain calculations:
+
+Vin =  mV
+vout =  mv
+
+Av = Vout/Vin
+   =  /
+     =
+Avdb=20 log(Av)
+ =20log(  )
+     =
+     
+  Theoritical gain calculation :
+
+  Av =gmx rd
+
+
+
+ # AC ANALYSIS
+
+ 
+
+
+
+  
+
 
 
     
