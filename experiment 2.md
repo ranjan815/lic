@@ -127,6 +127,23 @@ Procedure:
 Output expected graph:
 
 
+# RESULT
+
+The MOSFET amplifier circuits were designed and simulated using the required parameters. First, the DC analysis was performed to set the proper biasing conditions so that all the transistors operate in the saturation region. After confirming the correct operating point, AC analysis was carried out to study the small-signal behavior of the amplifier.
+
+From the simulation results, the voltage gain, bandwidth, output resistance, and other important parameters were obtained. The waveform of the output signal was observed and compared with the input signal. The amplifier successfully amplified the input signal while maintaining the expected phase relationship depending on the configuration used.
+
+The results obtained from the simulation were consistent with theoretical expectations. The gain and frequency response of the amplifier were clearly observed from the plots generated during AC analysis. Thus, the designed MOSFET amplifier circuit performed as intended.
+
+# CONCLUSION
+
+In this experiment, the MOSFET amplifier configuration was successfully designed and analyzed using simulation tools. The DC analysis helped in determining the correct biasing conditions so that the MOSFET operates in the saturation region, which is necessary for proper amplification.
+
+After performing AC analysis, important parameters such as voltage gain and bandwidth were evaluated. The simulation results demonstrated that the amplifier is capable of amplifying small input signals effectively. The comparison between theoretical expectations and simulation results showed good agreement.
+
+Overall, this experiment helped in understanding the working principle of MOSFET amplifiers, the importance of proper biasing, and how different parameters affect the amplifier performance. It also provided practical experience in analyzing amplifier circuits using simulation tools.
+
+
 
 
  
