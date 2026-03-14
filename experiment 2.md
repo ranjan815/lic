@@ -104,23 +104,18 @@ Procedure
 
 **Calculation for Gain calculations:
 
-Vin = 1.081 mV
-vout = 1.2047 mv
+Vin = 19.9 mV
+vout = 0.206 mv
 
 Av = Vout/Vin
-   =  
+   =  10.34 v/v
      =
 Avdb=20 log(Av)
- =20log(  )
-     =
+ =20log(10.34)
+     = 20.294
      
-  Theoritical gain calculation :
-
-  Av =gmx rd
-
-
-
- # AC ANALYSIS
+  
+   # AC ANALYSIS
 
  
 Procedure:
