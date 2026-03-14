@@ -29,7 +29,7 @@ theoretical values.
 
 Circuit 1 :
 
-DESIGN CALCULATIONS
+DESIGN CALCULATIONS FOR CIRCUIT A
 
 Given: Supply voltage, VDD = 1.5 V Chosen drain current, ID = 200 uA and threshold voltage = 0.36v
 consider Vov =0.25v so that both the MOSFET's operates in saturation region 
@@ -49,9 +49,11 @@ we know that ID = (1/2) un cox (W/L) Vov^2
             W =   
 
 for PMOS(M2): 
- Vov = Vsg - Vt
- Vsg = 0.25 + 0.39
-Vsg = 0.64v
+
+
+  Vov = Vsg - Vt
+  Vsg = 0.25 + 0.39
+   Vsg = 0.64v
 
 Vg = Vs + Vsg
 Vg = 0.86v
@@ -93,7 +95,12 @@ Procedure
  Procedure:
 
  1) apply the ac analysis command ( .ac dec 100 0.1 100G)
- 2) Run the simulation and observe the frequency responce 
+ 2) Run the simulation and observe the frequency responce
+
+# AC ANALYSIS
+
+
+    
 
 
 
