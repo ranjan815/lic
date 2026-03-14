@@ -125,6 +125,23 @@ Procedure:
 
 **Output expected graph:
 
+ Gain bandwidth product = Av * gain at -3dB
+  GBP=10.345 x 316.68 Mhz GBP=3.269Ghz
+
+  CIRCUIT 2 :
+  
+ ** Schematic diagram
+
+ DESIGN CALCULATIONS FOR CIRCUIT :
+
+ Given: Supply voltage, VDD = 1.5 V Chosen drain current, ID = 200 uA and threshold voltage = 0.36v
+consider Vov =0.25v so that all the MOSFET's operates in saturation region 
+
+
+
+ 
+ 
+
 
 # RESULT
 
