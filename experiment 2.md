@@ -31,8 +31,19 @@ Circuit 1 :
 
 DESIGN CALCULATIONS FOR CIRCUIT A
 
-Given: Supply voltage, VDD = 1.5 V Chosen drain current, ID = 200 uA and threshold voltage = 0.36v
-consider Vov =0.25v so that both the MOSFET's operates in saturation region 
+Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage = 0.36v
+consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW
+
+Bias current (ID) :
+
+P <= VDD * ID
+0.5 mW ≥ 1.5 x ID
+
+ID ≤ 0.33 mA
+
+Chosen operating current:
+
+ID = 200 uA
 
 for NMOS(M1) :
 
@@ -63,7 +74,7 @@ for PMOS(M2) :
 W = (2 x 180n x 200 x 10^-6)/ (115.6 x 10^-3 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
 W = 11.8*10^-6
 
-OUTPUT VOLTAGE AND RESISTOR :
+MAXIMUM OUTPUT VOLTAGE AND RESISTOR VALUE :
 
   Vo = VDD/2 + 0.2
   Vo = 0.95v
@@ -104,8 +115,8 @@ Procedure
 
 **Calculation for Gain calculations:
 
-Vin = 19.9 mV
-vout = 0.206 mv
+Vin(p-p) = 19.9 mV
+vout(p-p) = 0.206 mv
 
 Av = Vout/Vin
    =  10.34 v/v
@@ -134,12 +145,24 @@ Procedure:
 
  DESIGN CALCULATIONS FOR CIRCUIT :
 
- Given: Supply voltage, VDD = 1.5 V Chosen drain current, ID = 200 uA and threshold voltage = 0.36v
-consider Vov =0.25v so that all the MOSFET's operates in saturation region 
+ Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage = 0.36v
+consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW
+
+Bias current (ID) :
+
+P <= VDD * ID
+0.5 mW ≥ 1.5 x ID
+
+ID ≤ 0.33 mA
+
+Chosen operating current:
+
+ID = 200 uA
+
+For mosfet 1 :
 
 
 
- 
  
 
 
