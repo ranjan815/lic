@@ -34,46 +34,55 @@ DESIGN CALCULATIONS FOR CIRCUIT A
 Given: Supply voltage, VDD = 1.5 V Chosen drain current, ID = 200 uA and threshold voltage = 0.36v
 consider Vov =0.25v so that both the MOSFET's operates in saturation region 
 
-for NMOS(M1):
+for NMOS(M1) :
 
       Vov = Vgs - Vt
       0.25 = Vgs - 0.36
-      Vgs = 6.1v
+      Vgs = 0.61v
 
       Vgs = Vg - Vs
       Vg = Vgs + Vs 
          Vg = 0.81v
 
 we know that ID = (1/2) un cox (W/L) Vov^2
+
             W = (2 x 180n x 200 x 10^-6)/ (273.89 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
-            W =   
-
-for PMOS(M2): 
-
+            W =   4.2*10^-6
+            
+for PMOS(M2) :
 
   Vov = Vsg - Vt
   Vsg = 0.25 + 0.39
-   Vsg = 0.64v
+  Vsg = 0.64v
 
-Vg = Vs + Vsg
-Vg = 0.86v
+  Vg = Vs + Vsg
+  Vg = 0.86v
 
- ID = (1/2) up cox (W/L) Vov^2
+  ID = (1/2) up cox (W/L) Vov^2
+ 
 W = (2 x 180n x 200 x 10^-6)/ (115.6 x 10^-3 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
-w = 
+W = 11.8*10^-6
 
+OUTPUT VOLTAGE AND RESISTOR :
 
+  Vo = VDD/2 + 0.2
+  Vo = 0.95v
+
+  VRs = ID*Rs
+  Rs = 1K Ohm
+
+  
 # DC ANALYSIS:
 
 
 schematic :
 
 
-based on the initial design equations, the calculated values of  Width of both the mosfet were w1=  um and w2=  um Rs =   kΩ.
+based on the initial design equations, the calculated values of  Width of both the mosfet were w1=4.2*10^-6  um and w2= 11.8*10^-6 um Rs = 1kΩ.
 However, to meet the necessary operating conditions, the transistor width was adjusted.
 The goal was to achieve a drain voltage of   V and a drain current of 200 uA. By changing the
 width parameter, we successfully established the desired Q-point. The final optimized width needed 
-to maintain ID = 200 uA at output voltage of   V was found to be W1 =  um and w2=  um
+to maintain ID = 200 uA at output voltage of   V was found to be W1 = 26*10^-6  um and w2= 40*10^-6 um
 
 # TRANSIENT ANALYSIS
 
@@ -92,19 +101,14 @@ Procedure
  ** OUTPUT VOLTAGE
 
 
- Procedure:
-
- 1) apply the ac analysis command ( .ac dec 100 0.1 100G)
- 2) Run the simulation and observe the frequency responce
-
 
 **Calculation for Gain calculations:
 
-Vin =  mV
-vout =  mv
+Vin = 1.081 mV
+vout = 1.2047 mv
 
 Av = Vout/Vin
-   =  /
+   =  
      =
 Avdb=20 log(Av)
  =20log(  )
@@ -124,7 +128,7 @@ Procedure:
  1) apply the ac analysis command ( .ac dec 100 0.1 100G)
  2) Run the simulation and observe the frequency responce 
 
-Output expected graph:
+**Output expected graph:
 
 
 # RESULT
