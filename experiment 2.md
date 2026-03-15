@@ -147,6 +147,7 @@ Procedure:
 
 ![Image description]()
 
+
  Gain bandwidth product = Av * gain at -3dB
   GBP=10.345 x 316.68 Mhz GBP=3.269Ghz
 
