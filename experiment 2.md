@@ -7,7 +7,7 @@ performance and justify the interpretations
 
 # b)![Image description]()
 
-# c)![Image description]()
+# c)![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002255.png?raw=true)
 
 Procedure or steps : 
 
