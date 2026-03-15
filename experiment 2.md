@@ -5,7 +5,7 @@ performance and justify the interpretations
 
 # a)![Image description]()
 
-# b)![Image description]()
+# b)![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002407.png?raw=true)
 
 # c)![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002255.png?raw=true)
 
