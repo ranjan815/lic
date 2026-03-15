@@ -238,7 +238,7 @@ W = 11.83u
 **schematic
 
 based on the initial design equations, the calculated values of  Width of the 3 mosfet were W1 = W2 = 5 um and W3 = 11.83 um 
-However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 =   um and w2=  um
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = w3 =   um and w2=  um
 
 
 # TRANSIENT ANALYSIS :
