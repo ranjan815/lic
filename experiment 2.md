@@ -36,14 +36,14 @@ consider Vov =0.25v so that both the MOSFET's operates in saturation region and 
 
 Bias current (ID) :
 
-'P <= VDD * ID
+'''P <= VDD * ID
 0.5 mW ≥ 1.5 x ID
 
 ID ≤ 0.33 mA
 
 Chosen operating current:
 
-ID = 200 uA'
+ID = 200 uA'''
 
 for NMOS(M1) :
 
