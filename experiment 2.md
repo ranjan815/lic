@@ -3,11 +3,11 @@
 Aim : Design the amplifier configurations using tsmc in LT spice.Compare the
 performance and justify the interpretations
 
- a)
+ a)![Image description]()
 
- b)
+ b)![Image description]()
 
- c)
+ c)![Image description]()
 
 Procedure or steps : 
 
@@ -93,6 +93,8 @@ MAXIMUM OUTPUT VOLTAGE AND RESISTOR VALUE :
 
 schematic :
 
+![Image description]()
+
 
 based on the initial design equations, the calculated values of  Width of both the mosfet were w1=4.2*10^-6  um and w2= 11.8*10^-6 um Rs = 1kΩ.
 However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  0.95 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of   V was found to be W1 = 26*10^-6  um and w2= 40*10^-6 um
@@ -109,11 +111,11 @@ Procedure
 
  ** INPUT VOLTAGE
 
-
+![Image description]()
 
  ** OUTPUT VOLTAGE
 
-
+![Image description]()
 
 **Calculation for Gain calculations:
 ```
@@ -139,12 +141,16 @@ Procedure:
 
 **Output expected graph:
 
+![Image description]()
+
  Gain bandwidth product = Av * gain at -3dB
   GBP=10.345 x 316.68 Mhz GBP=3.269Ghz
 
   CIRCUIT 2 :
   
  ** Schematic diagram
+ 
+ ![Image description]()
 
 # DESIGN CALCULATIONS FOR CIRCUIT :
 
@@ -246,8 +252,7 @@ However, to meet the necessary operating conditions, the transistor width was ad
 
 
 **input and output graph 
-
-
+![Image description]()
 
 **Calculation for Gain calculations:
 ```
@@ -266,6 +271,7 @@ Avdb=20 log(Av)
 
  **Output expected graph:
 
+![Image description]()
 
 **Frequency Response Results
 ```
@@ -276,6 +282,7 @@ Avdb=20 log(Av)
   # CIRCUIT 3 :
 
   ** Schematic diagram
+  ![Image description]()
 
   # DESIGN CALCULATIONS FOR CIRCUIT :
   
