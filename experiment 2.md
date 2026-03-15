@@ -381,8 +381,12 @@ However, to meet the necessary operating conditions, the transistor width was ad
 
 **input and output graph 
 
+  ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-15%20224854.png?raw=true)
+
+
   ![Image description]()
 
+  
   **Calculation for Gain calculations:
 ```
 Vin(p-p) =  mV
