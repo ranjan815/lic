@@ -3,7 +3,7 @@
 Aim : Design the amplifier configurations using tsmc in LT spice.Compare the
 performance and justify the interpretations
 
-# a)![Image description]()
+# a)![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20003415.png?raw=true)
 
 # b)![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002407.png?raw=true)
 
@@ -28,6 +28,11 @@ theoretical values.
 5) Perform step 1 to 4 for all the three configurations and compare the parameters.
 
 Circuit 1 :
+
+
+**schematic
+
+![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20003415.png?raw=true)
 
 # DESIGN CALCULATIONS FOR CIRCUIT A
 
@@ -93,8 +98,7 @@ MAXIMUM OUTPUT VOLTAGE AND RESISTOR VALUE :
 
 schematic :
 
-![Image description]()
-
+![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002407.png?raw=true)
 
 based on the initial design equations, the calculated values of  Width of both the mosfet were w1=4.2*10^-6  um and w2= 11.8*10^-6 um Rs = 1kΩ.
 However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  0.95 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of   V was found to be W1 = 26*10^-6  um and w2= 40*10^-6 um
@@ -150,7 +154,7 @@ Procedure:
   
  ** Schematic diagram
  
- ![Image description]()
+ ![Image description](![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002255.png?raw=true))
 
 # DESIGN CALCULATIONS FOR CIRCUIT :
 
