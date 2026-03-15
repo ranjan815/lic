@@ -36,14 +36,16 @@ consider Vov =0.25v so that both the MOSFET's operates in saturation region and 
 
 Bias current (ID) :
 
-'''P <= VDD * ID
+```
+P <= VDD * ID
 0.5 mW ≥ 1.5 x ID
 
 ID ≤ 0.33 mA
 
 Chosen operating current:
 
-ID = 200 uA'''
+ID = 200 uA
+ ```
 
 for NMOS(M1) :
 
@@ -62,6 +64,7 @@ we know that ID = (1/2) un cox (W/L) Vov^2
             
 for PMOS(M2) :
 
+```
   Vov = Vsg - Vt
   Vsg = 0.25 + 0.39
   Vsg = 0.64v
@@ -73,15 +76,17 @@ for PMOS(M2) :
  
 W = (2 x 180n x 200 x 10^-6)/ (115.6 x 10^-3 x 10^-4 x 8.616 x 10^-3 x 0.25^2)
 W = 11.8*10^-6
+```
 
 MAXIMUM OUTPUT VOLTAGE AND RESISTOR VALUE :
+```
 
   Vo = VDD/2 + 0.2
   Vo = 0.95v
 
   VRs = ID*Rs
   Rs = 1K Ohm
-
+```
   
 # DC ANALYSIS:
 
@@ -111,6 +116,7 @@ Procedure
 
 
 **Calculation for Gain calculations:
+```
 
 Vin(p-p) = 19.9 mV
 vout(p-p) = 0.206 mv
@@ -121,7 +127,7 @@ Av = Vout/Vin
 Avdb=20 log(Av)
  =20log(10.34)
      = 20.294 dB
-     
+  ```   
   
    # AC ANALYSIS
 
@@ -146,7 +152,7 @@ Procedure:
 consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW
 
 Bias current (ID) :
-
+```
 P <= VDD * ID
 0.5 mW ≥ 1.5 x ID
 
@@ -155,24 +161,27 @@ ID ≤ 0.33 mA
 Chosen operating current:
 
 ID = 200 uA
-
+```
 For mosfet 3 :
-
+```
 VGS2	=VTHn + Vov	0.36 + 0.25
 VGS2= 0.61 V
+```
 Source Voltage	Ground	0 V
 Gate Voltage	Bias value	0.61 V
 Drain Voltage	VS1 =	0.30 V
 VDS2 =	VD2 − VS2
 VDS2 = 0.30 V
-
+```
 Therefore 
  VDS2 ≥ Vov
- 0.30 ≥ 0.25 
+ 0.30 ≥ 0.25
+```
 Thus M2 operates in saturation.
 
 For mosfet 1 :
 
+```
 Gate Voltage	Given
 VG = 0.91 V
 Source Voltage
@@ -180,7 +189,8 @@ VS1 =	0.30 V
 VGS1 =	VG1 − VS1	
 = 0.91 − 0.30 
 VGS1= 0.61 V
-
+```
+```
 Vout = VDS1 + VS1
 
 VDS1	= VDD / 2
@@ -189,36 +199,40 @@ VDS1	= 0.75 V
 Vout =	0.75 + 0.30	
 Vout = 1.05 V
 
-
-VDS1 ≥ Vov	0.75 ≥ 0.25 
+```
+```
+VDS1 ≥ Vov	0.75 ≥ 0.25
+```
  Hence M1 remains in saturation
 
 PMOS Active Load (Mosfet 3):
-
+```
 Source Voltage (VS) =	VDD	= 1.5 V
 Gate Voltage	Given	
 VG = 0.91 V
 VSG3 =	VS − VG	
 = 1.5 − 0.91 
 VSG3 = 0.59 V
-
+```
+```
 VSD3 =	VS − Vout
 =1.5 − 1.05
 VSD3 = 0.45 V
 
 VSD3 ≥ Vov	
-=0.45 ≥ 0.25 
+=0.45 ≥ 0.25
+```
 Thus PMOS load operates in saturation.
 
 Width Calculation :
-
+```
 For NMOS :
 From current equation: ID = (1/2) un cox (W/L) Vov^2
 W = 5u
 
 And For PMOS :
 W = 11.83u
-
+```
 # DC ANALYSIS
 
 **schematic
@@ -235,7 +249,7 @@ However, to meet the necessary operating conditions, the transistor width was ad
 
 
 **Calculation for Gain calculations:
-
+```
 Vin(p-p) = 0.3256  mV
 vout(p-p) = 0.01908 mv
 
@@ -246,18 +260,18 @@ Avdb=20 log(Av)
  =20log(1.71)
   = 4.66 dB
 
-
+```
  # AC ANALYSIS
 
  **Output expected graph:
 
 
 **Frequency Response Results
-
+```
  Gain bandwidth product = Av * gain at -3dB
  = 
   GBP =   Mhz GBP=   Ghz
-  
+  ```
   # CIRCUIT 3 :
 
   ** Schematic diagram
@@ -292,48 +306,57 @@ For mosfet 1 :
 Since
 VS1 = 0.5 V
 
-the gate voltage becomes          
-VG1 = VS1 + VGS1 = 0.5 + 0.61	
+the gate voltage becomes  
+```
+VG1 = VS1 + VGS1
+= 0.5 + 0.61	
 VG1 = 1.11 V  
-
+```
 Therefore,
 VIN(DC) ≈ 1.11 V
 
 This bias keeps M1 operating in saturation.   
 
-Output Voltage:                        
+Output Voltage: 
+```
 VDS ≈ VDD / 2 
 = 1.5 / 2
 VDS ≈ 0.75 V  
 Vout = VDS + VS1
 = 0.75 + 0.5	
-Vout ≈ 1.25 V                       
+Vout ≈ 1.25 V
+```                  
 This operating point allows adequate output swing while maintaining saturation.
 
 For mosfet 2 : 
-
+```
 VSG2 = (VTHp + VOV)
 = 0.39 + 0.25
 VSG2 = 0.64 V
-
+```
 Since the source of M2 is tied to the supply
 VS2 = VDD = 1.5 V
 
-the gate voltage becomes   
+The gate voltage becomes   
+```
 VG2 = VS2 − VSG2
 = 1.5 − 0.64	
-VG2 = 0.86 V                                                                      VSD2 = VS2 − Vout
+VG2 = 0.86 V     
+```
+```
+VSD2 = VS2 − Vout
 = 1.5 − 1.25	
 VSD2 = 0.25 V
-
+```
 Width Calculation :
 
 For M1 :
+```
 From current equation: ID = (1/2) un cox (W/L) Vov^2
 W1 = 19.35 µm 
 W2 = 60.75 µm      
 W3 = 41.65 µm
-
+```
 conclusion : As all three transistors M1, M2, and M3 are in saturation condition.
 Therefore, the circuit operates correctly with all devices biased in the saturation region, which is necessary for proper amplifier operation.
 
