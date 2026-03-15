@@ -145,7 +145,7 @@ Procedure:
 
 **Output expected graph:
 
-![Image description]()
+![Image description](https://github.com/ranjan815/lic/blob/main/images/WhatsApp%20Image%202026-03-16%20at%2012.45.10%20AM.jpeg?raw=true)
 
 
  Gain bandwidth product = Av * gain at -3dB
