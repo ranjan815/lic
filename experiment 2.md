@@ -370,7 +370,7 @@ Therefore, the circuit operates correctly with all devices biased in the saturat
 
 # DC ANALYSIS
 
-  ![Image description]()
+  ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-15%20224814.png?raw=true)
 
 based on the initial design equations, the calculated values of  Width of the 3 mosfet were W1 = um  W2 =  um and W3 =  um 
 However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = um  w3 =   um and w2=  um
