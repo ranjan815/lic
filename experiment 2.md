@@ -90,10 +90,7 @@ schematic :
 
 
 based on the initial design equations, the calculated values of  Width of both the mosfet were w1=4.2*10^-6  um and w2= 11.8*10^-6 um Rs = 1kΩ.
-However, to meet the necessary operating conditions, the transistor width was adjusted.
-The goal was to achieve a drain voltage of   V and a drain current of 200 uA. By changing the
-width parameter, we successfully established the desired Q-point. The final optimized width needed 
-to maintain ID = 200 uA at output voltage of   V was found to be W1 = 26*10^-6  um and w2= 40*10^-6 um
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  0.95 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of   V was found to be W1 = 26*10^-6  um and w2= 40*10^-6 um
 
 # TRANSIENT ANALYSIS
 
@@ -123,7 +120,7 @@ Av = Vout/Vin
      =
 Avdb=20 log(Av)
  =20log(10.34)
-     = 20.294
+     = 20.294 dB
      
   
    # AC ANALYSIS
@@ -143,7 +140,7 @@ Procedure:
   
  ** Schematic diagram
 
- DESIGN CALCULATIONS FOR CIRCUIT :
+## DESIGN CALCULATIONS FOR CIRCUIT :
 
  Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage = 0.36v
 consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW
@@ -159,11 +156,111 @@ Chosen operating current:
 
 ID = 200 uA
 
+For mosfet 3 :
+
+VGS2	=VTHn + Vov	0.36 + 0.25
+VGS2= 0.61 V
+Source Voltage	Ground	0 V
+Gate Voltage	Bias value	0.61 V
+Drain Voltage	VS1 =	0.30 V
+VDS2 =	VD2 − VS2
+VDS2 = 0.30 V
+
+Therefore 
+ VDS2 ≥ Vov
+ 0.30 ≥ 0.25 
+Thus M2 operates in saturation.
+
 For mosfet 1 :
 
+Gate Voltage	Given
+VG = 0.91 V
+Source Voltage
+VS1 =	0.30 V
+VGS1 =	VG1 − VS1	
+= 0.91 − 0.30 
+VGS1= 0.61 V
+
+Vout = VDS1 + VS1
+
+VDS1	= VDD / 2
+= 1.5 / 2
+VDS1	= 0.75 V
+Vout =	0.75 + 0.30	
+Vout = 1.05 V
 
 
- 
+VDS1 ≥ Vov	0.75 ≥ 0.25 
+ Hence M1 remains in saturation
+
+PMOS Active Load (Mosfet 3):
+
+Source Voltage (VS) =	VDD	= 1.5 V
+Gate Voltage	Given	
+VG = 0.91 V
+VSG3 =	VS − VG	
+= 1.5 − 0.91 
+VSG3 = 0.59 V
+
+VSD3 =	VS − Vout
+=1.5 − 1.05
+VSD3 = 0.45 V
+
+VSD3 ≥ Vov	
+=0.45 ≥ 0.25 
+Thus PMOS load operates in saturation.
+
+Width Calculation :
+
+For NMOS :
+From current equation: ID = (1/2) un cox (W/L) Vov^2
+W = 5u
+
+And For PMOS :
+W = 11.83u
+
+# DC ANALYSIS
+
+**schematic
+
+based on the initial design equations, the calculated values of  Width of the 3 mosfet were W1 = W2 = 5 um and W3 = 11.83 um 
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 =   um and w2=  um
+
+
+# TRANSIENT ANALYSIS :
+
+
+**input and output graph 
+
+
+
+**Calculation for Gain calculations:
+
+Vin(p-p) =  mV
+vout(p-p) =  mv
+
+Av = Vout(p-p) / Vin(p-p)	
+= 0.03256 / 0.01908
+   Av  = 	1.71 V/V
+Avdb=20 log(Av)
+ =20log(1.71)
+  = 4.66 dB
+
+
+ # AC ANALYSIS
+
+ **Output expected graph:
+
+
+Frequency Response Results
+
+ Gain bandwidth product = Av * gain at -3dB
+ = 
+  GBP =   Mhz GBP=   Ghz
+  
+
+
+
 
 
 # RESULT
