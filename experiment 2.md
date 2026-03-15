@@ -3,7 +3,7 @@
 Aim : Design the amplifier configurations using tsmc in LT spice.Compare the
 performance and justify the interpretations
 
- a)![Image description]()
+ a)![Image description](https://github.com/ranjan815/lic/blob/main/images/2.a.jpeg?raw=true)
 
  b)![Image description]()
 
