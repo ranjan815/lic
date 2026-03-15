@@ -140,9 +140,9 @@ Procedure:
   
  ** Schematic diagram
 
-## DESIGN CALCULATIONS FOR CIRCUIT :
+# DESIGN CALCULATIONS FOR CIRCUIT :
 
- Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage = 0.36v
+ Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage for NMOS = 0.36v and for PMOS = -0.39 V
 consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW
 
 Bias current (ID) :
@@ -236,8 +236,8 @@ However, to meet the necessary operating conditions, the transistor width was ad
 
 **Calculation for Gain calculations:
 
-Vin(p-p) =  mV
-vout(p-p) =  mv
+Vin(p-p) = 0.3256  mV
+vout(p-p) = 0.01908 mv
 
 Av = Vout(p-p) / Vin(p-p)	
 = 0.03256 / 0.01908
@@ -252,15 +252,90 @@ Avdb=20 log(Av)
  **Output expected graph:
 
 
-Frequency Response Results
+**Frequency Response Results
 
  Gain bandwidth product = Av * gain at -3dB
  = 
   GBP =   Mhz GBP=   Ghz
   
+  # CIRCUIT 3 :
 
+  ** Schematic diagram
 
+  # DESIGN CALCULATIONS FOR CIRCUIT :
+  
+Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage for NMOS = 0.36v and for PMOS = -0.39 V
+consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW Bias current ID = 200uA  
 
+For mosfet 3 :
+
+The gate and drain are shorted Therefore:
+VG = VD          
+
+The source of M3 is connected to ground.                                            VS3	0 V  
+
+Using the selected bias point,  
+VG3 = VD3	= 0.5 V     
+
+Since this node is directly connected to the source of M1, we obtain              VS1	0.5 V  
+
+The diode-connected NMOS establishes a stable bias node where
+VG3 = VD3 = VS1 = 0.5 V,
+
+allowing the circuit to maintain the required current (~200 µA).
+
+For mosfet 1 :
+
+ To maintain the required drain current in M1, the gate–source voltage must satisfy        
+ VGS1 = VTH + VOV = 0.36 + 0.25
+ VGS1=0.61 V
+Since
+VS1 = 0.5 V
+
+the gate voltage becomes          
+VG1 = VS1 + VGS1 = 0.5 + 0.61	
+VG1 = 1.11 V  
+
+Therefore,
+VIN(DC) ≈ 1.11 V
+
+This bias keeps M1 operating in saturation.   
+
+Output Voltage:                        
+VDS ≈ VDD / 2 
+= 1.5 / 2
+VDS ≈ 0.75 V  
+Vout = VDS + VS1
+= 0.75 + 0.5	
+Vout ≈ 1.25 V                       
+This operating point allows adequate output swing while maintaining saturation.
+
+For mosfet 2 : 
+
+VSG2 = (VTHp + VOV)
+= 0.39 + 0.25
+VSG2 = 0.64 V
+
+Since the source of M2 is tied to the supply
+VS2 = VDD = 1.5 V
+
+the gate voltage becomes   
+VG2 = VS2 − VSG2
+= 1.5 − 0.64	
+VG2 = 0.86 V                                                                      VSD2 = VS2 − Vout
+= 1.5 − 1.25	
+VSD2 = 0.25 V
+
+Width Calculation :
+
+For M1 :
+From current equation: ID = (1/2) un cox (W/L) Vov^2
+W1 = 19.35 µm 
+W2 = 60.75 µm      
+W3 = 41.65 µm
+
+conclusion : As all three transistors M1, M2, and M3 are in saturation condition.
+Therefore, the circuit operates correctly with all devices biased in the saturation region, which is necessary for proper amplifier operation.
 
 
 # RESULT
