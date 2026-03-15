@@ -281,7 +281,7 @@ Avdb=20 log(Av)
 **Frequency Response Results
 ```
  Gain bandwidth product = Av * gain at -3dB
- = 
+ = 4.66  * 
   GBP =   Mhz GBP=   Ghz
   ```
   # CIRCUIT 3 :
@@ -394,14 +394,13 @@ However, to meet the necessary operating conditions, the transistor width was ad
   
   **Calculation for Gain calculations:
 ```
-Vin(p-p) =  mV
-vout(p-p) =  mv
+Vin(p-p) = 19.67 mV
+vout(p-p) = 303.591 mv
 
 Av = Vout(p-p) / Vin(p-p)	
-= 
-   Av  = 	 V/V
+   Av  = 15.434	 V/V
 Avdb=20 log(Av)
- =20log()
+ =20log(15.434)
   =  dB
 
 ```
@@ -414,8 +413,9 @@ Avdb=20 log(Av)
 **Frequency Response Results
 ```
  Gain bandwidth product = Av * gain at -3dB
- = 
-  GBP =   Mhz GBP=   Ghz
+ =  225.89884MHz * 15.434
+  GBP =   Mhz
+
   ```
 
 # RESULT
