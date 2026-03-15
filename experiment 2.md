@@ -29,7 +29,7 @@ theoretical values.
 
 Circuit 1 :
 
-DESIGN CALCULATIONS FOR CIRCUIT A
+# DESIGN CALCULATIONS FOR CIRCUIT A
 
 Given: Supply voltage, VDD = 1.5 V Chosen drain current, threshold voltage = 0.36v
 consider Vov =0.25v so that both the MOSFET's operates in saturation region and P<=0.5mW
