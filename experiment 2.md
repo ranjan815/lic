@@ -368,6 +368,46 @@ W3 = 41.65 µm
 conclusion : As all three transistors M1, M2, and M3 are in saturation condition.
 Therefore, the circuit operates correctly with all devices biased in the saturation region, which is necessary for proper amplifier operation.
 
+# DC ANALYSIS
+
+  ![Image description]()
+
+based on the initial design equations, the calculated values of  Width of the 3 mosfet were W1 = um  W2 =  um and W3 =  um 
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = um  w3 =   um and w2=  um
+
+
+# TRANSIENT ANALYSIS :
+
+
+**input and output graph 
+
+  ![Image description]()
+
+  **Calculation for Gain calculations:
+```
+Vin(p-p) =  mV
+vout(p-p) =  mv
+
+Av = Vout(p-p) / Vin(p-p)	
+= 
+   Av  = 	 V/V
+Avdb=20 log(Av)
+ =20log()
+  =  dB
+
+```
+ # AC ANALYSIS
+
+ **Output expected graph:
+
+![Image description]()
+
+**Frequency Response Results
+```
+ Gain bandwidth product = Av * gain at -3dB
+ = 
+  GBP =   Mhz GBP=   Ghz
+  ```
 
 # RESULT
 
