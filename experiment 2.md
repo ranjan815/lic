@@ -101,7 +101,7 @@ schematic :
 ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002407.png?raw=true)
 
 based on the initial design equations, the calculated values of  Width of both the mosfet were w1=4.2*10^-6  um and w2= 11.8*10^-6 um Rs = 1kΩ.
-However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  0.95 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of   V was found to be W1 = 26*10^-6  um and w2= 40*10^-6 um
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  0.95 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of   V was found to be W1 = 12.8*10^-6  um and w2= 37.163*10^-6 um
 
 # TRANSIENT ANALYSIS
 
@@ -251,7 +251,7 @@ W = 11.83u
 ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-15%20223631.png?raw=true)
 
 based on the initial design equations, the calculated values of  Width of the 3 mosfet were W1 = W2 = 5 um and W3 = 11.83 um 
-However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = w3 =   um and w2=  um
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = 60.3 w3 = 16.3   um and w2= 36.58 um
 
 
 # TRANSIENT ANALYSIS :
@@ -282,8 +282,8 @@ Avdb=20 log(Av)
 **Frequency Response Results
 ```
  Gain bandwidth product = Av * gain at -3dB
- =8.97  * 
-  GBP =   Mhz GBP=   Ghz
+ =8.97  * 6.54 MHZ
+  GBP =  58.66 Mhz 
   ```
   # CIRCUIT 3 :
 
@@ -379,7 +379,7 @@ Therefore, the circuit operates correctly with all devices biased in the saturat
   ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-15%20224814.png?raw=true)
 
 based on the initial design equations, the calculated values of  Width of the 3 mosfet were W1 = um  W2 =  um and W3 =  um 
-However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = um  w3 =   um and w2=  um
+However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  1.05 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of 1.05 V was found to be W1 = 32.7 um  w3 =   32.8 um and w2= 80 um
 
 
 # TRANSIENT ANALYSIS :
