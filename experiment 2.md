@@ -98,7 +98,7 @@ MAXIMUM OUTPUT VOLTAGE AND RESISTOR VALUE :
 
 schematic :
 
-![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20002407.png?raw=true)
+![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20at%201.06.00%20AM.jpeg?raw=true)
 
 based on the initial design equations, the calculated values of  Width of both the mosfet were w1=4.2*10^-6  um and w2= 11.8*10^-6 um Rs = 1kΩ.
 However, to meet the necessary operating conditions, the transistor width was adjusted. The goal was to achieve a drain voltage of  0.95 V and a drain current of 200 uA. By changing the width parameter, we successfully established the desired Q-point. The final optimized width needed to maintain ID = 200 uA at output voltage of   V was found to be W1 = 12.8*10^-6  um and w2= 37.163*10^-6 um
