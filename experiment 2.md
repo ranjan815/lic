@@ -390,7 +390,7 @@ However, to meet the necessary operating conditions, the transistor width was ad
   ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20194519.png?raw=true)
 
 
-  ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-15%20224840.png?raw=true)
+  ![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%202026-03-16%20194440.png?raw=true)
 
   
   **Calculation for Gain calculations:
