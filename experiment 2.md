@@ -149,7 +149,8 @@ Procedure:
 
 
  Gain bandwidth product = Av * gain at -3dB
-  GBP=10.345 x 316.68 Mhz GBP=3.269Ghz
+  GBP=10.345 x 316.68 Mhz
+  GBP=3.269Ghz
 
   CIRCUIT 2 :
   
@@ -261,15 +262,15 @@ However, to meet the necessary operating conditions, the transistor width was ad
 
 **Calculation for Gain calculations:
 ```
-Vin(p-p) = 0.3256  mV
-vout(p-p) = 0.01908 mv
+Vin(p-p) = 19.19  mV
+vout(p-p) =53.95 mv
 
 Av = Vout(p-p) / Vin(p-p)	
 = 0.03256 / 0.01908
-   Av  = 	1.71 V/V
+   Av  = 	2.81 V/V
 Avdb=20 log(Av)
- =20log(1.71)
-  = 4.66 dB
+ =20log(2.81)
+  = 8.97 dB
 
 ```
  # AC ANALYSIS
@@ -281,7 +282,7 @@ Avdb=20 log(Av)
 **Frequency Response Results
 ```
  Gain bandwidth product = Av * gain at -3dB
- = 4.66  * 
+ =8.97  * 
   GBP =   Mhz GBP=   Ghz
   ```
   # CIRCUIT 3 :
@@ -401,7 +402,7 @@ Av = Vout(p-p) / Vin(p-p)
    Av  = 15.434	 V/V
 Avdb=20 log(Av)
  =20log(15.434)
-  =  dB
+  = 23.76 dB
 
 ```
  # AC ANALYSIS
@@ -414,7 +415,7 @@ Avdb=20 log(Av)
 ```
  Gain bandwidth product = Av * gain at -3dB
  =  225.89884MHz * 15.434
-  GBP =   Mhz
+  GBP = 3486  Mhz
 
   ```
 
