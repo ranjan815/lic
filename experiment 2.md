@@ -113,13 +113,10 @@ Procedure
 3) And run simulation and note  Vin and Vout peak to peak voltages
 4) calculate the gain(Vout/vin) from the obtained voltages
 
- ** INPUT VOLTAGE
+ ** INPUT VOLTAGE AND OUTPUT VOLTAGE
 
-![Image description]()
+![Image description](https://github.com/ranjan815/lic/blob/main/images/Screenshot%20%202026-03-16%20at%201.06.01%20AM.jpeg?raw=true)
 
- ** OUTPUT VOLTAGE
-
-![Image description]()
 
 **Calculation for Gain calculations:
 ```
