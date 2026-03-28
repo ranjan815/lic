@@ -142,7 +142,7 @@ Linear condition:
 * Output is clipped
 * One transistor turns OFF
 
-  ![Image description](__paste__image__link__here___)
+  ![Image description](https://github.com/ranjan815/lic/blob/main/images/transient%20600m.png)
 
 ---
 
