@@ -78,25 +78,31 @@ The output is taken from the drain terminals.
 
 Total current:
 `I_SS = P / (V_DD − V_SS)`
+
 `I_SS = 1.5 mW / 1.8 V = 0.833 mA`
 
 Drain current:
 `I_D = I_SS / 2`
+
 `I_D = 0.833 / 2 = 0.4165 mA`
 
 Load resistance:
 `R_D = V_DD / I_D`
+
 `R_D = 0.9 / (0.4165 × 10⁻³) ≈ 2.16 kΩ`
 
 (Used value: 2.25 kΩ)
 
 Voltages:
 `V_GS = 0 − (−0.7) = 0.7 V`
+
 `V_ov = V_GS − V_T = 0.7 − 0.36 = 0.34 V`
+
 `V_DS = 0 − (−0.7) = 0.7 V`
 
 Since
 `V_DS ≥ V_ov`
+
 both transistors operate in saturation.
 
 ---
