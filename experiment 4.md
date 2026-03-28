@@ -148,7 +148,7 @@ Linear condition:
 
 ## AC Analysis
 
-![Image description](__paste__image__link__here___)
+![Image description](https://github.com/ranjan815/lic/blob/main/images/ac%20analysis.png)
 
 Gain:
 `A_v = 3.55 V/V`
