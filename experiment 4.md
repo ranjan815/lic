@@ -135,7 +135,7 @@ Linear condition:
 * Output is sinusoidal
 * No distortion
 * 
-   ![Image description](__paste__image__link__here___)
+   ![Image description](https://github.com/ranjan815/lic/blob/main/images/transient%20200m.png)
 
 ### Case 2: Large Input (600 mV)
 
