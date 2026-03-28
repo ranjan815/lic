@@ -69,6 +69,8 @@ The circuit consists of:
 * Tail current source
 * Load resistors
 * Input voltages applied at gates
+* 
+  ![Image description](__paste__image__link__here___)
 
 The output is taken from the drain terminals.
 
@@ -117,6 +119,8 @@ both transistors operate in saturation.
 
 ---
 
+![Image description](__paste__image__link__here___)
+
 ## Transient Analysis
 
 Differential input:
@@ -130,15 +134,21 @@ Linear condition:
 
 * Output is sinusoidal
 * No distortion
+* 
+   ![Image description](__paste__image__link__here___)
 
 ### Case 2: Large Input (600 mV)
 
 * Output is clipped
 * One transistor turns OFF
 
+  ![Image description](__paste__image__link__here___)
+
 ---
 
 ## AC Analysis
+
+![Image description](__paste__image__link__here___)
 
 Gain:
 `A_v = 3.55 V/V`
