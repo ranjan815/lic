@@ -70,7 +70,7 @@ The circuit consists of:
 * Load resistors
 * Input voltages applied at gates
 * 
-  ![Image description](__paste__image__link__here___)
+  ![Image description](https://github.com/ranjan815/lic/blob/main/images/circuit.png)
 
 The output is taken from the drain terminals.
 
