@@ -119,7 +119,7 @@ both transistors operate in saturation.
 
 ---
 
-![Image description](__paste__image__link__here___)
+![Image description](https://github.com/ranjan815/lic/blob/main/images/op%20.png)
 
 ## Transient Analysis
 
