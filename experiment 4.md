@@ -41,13 +41,13 @@ A_v = g_m / R_{out}
 ### Transconductance
 
 [
-g_m = \frac{2I_D}{V_{ov}}
+g_m = {2I_D}/{V_{ov}}
 ]
 
 ### Linear Operating Condition
 
 [
-|v_{id}| < $\sqrt{2} \cdot V_{ov}
+|v_{id}| < \sqrt{2} \ V_{ov}
 ]
 
 ---
