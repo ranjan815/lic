@@ -1,68 +1,63 @@
 # Experiment 04
 
-## MOS Differential Amplifier using Resistive Load
+## Differential Amplifier Analysis
 
 ---
 
-##  Aim
+## Aim
 
-To design and analyze a MOSFET differential amplifier using LTspice and evaluate its performance through **DC analysis, transient response, and AC frequency analysis**.
-
----
-
-##  Introduction
-
-A differential amplifier is a core analog circuit that amplifies the difference between two input signals while rejecting common-mode signals (noise).
-
-This characteristic, called **Common Mode Rejection (CMR)**, makes it highly useful in precision electronics.
-
-Applications include:
-
-* Operational amplifiers
-* Analog signal processing
-* Communication circuits
+To design and simulate a MOSFET differential amplifier using LTspice and analyze its performance using DC, transient, and AC analysis.
 
 ---
 
-##  Theory
+## Introduction
 
-### Differential Input
+A differential amplifier is one of the basic building blocks in analog circuits. It amplifies the difference between two input signals and rejects common signals.
 
-[
-v_{id} = v_{in1} - v_{in2}
-]
-
-### Small Signal Gain
-
-[
-A_v = g_m / R_{out}
-]
-
-### Transconductance
-
-[
-g_m = {2I_D}/{V_{ov}}
-]
-
-### Linear Operating Condition
-
-[
-|v_{id}| < \sqrt{2} \ V_{ov}
-]
+These amplifiers are widely used in operational amplifiers and analog front-end circuits due to good noise rejection.
 
 ---
 
-##  Design Specifications
+## Theory
 
-| Parameter        | Value  |
-| ---------------- | ------ |
-| ( V_{DD} )       | +0.9 V |
-| ( V_{SS} )       | -0.9 V |
-| Total Supply     | 1.8 V  |
-| Power Limit      | 1.5 mW |
-| Tail Voltage     | -0.7 V |
-| Channel Length   | 360 nm |
-| Load Capacitance | 10 pF  |
+A differential amplifier works by comparing two input voltages.
+
+The differential input is given by
+`v_id = v_in1 − v_in2`
+
+The circuit consists of two identical MOSFETs sharing a constant current source.
+
+When both inputs are equal, current splits equally:
+`I_D1 = I_D2 = I_SS / 2`
+
+When one input increases, more current flows through that transistor and less through the other.
+
+For proper operation, MOSFETs must be in saturation:
+`V_DS ≥ V_GS − V_T`
+
+The voltage gain is given by:
+`A_v = g_m · R_D`
+
+where transconductance is:
+`g_m = 2I_D / V_ov`
+
+and
+`V_ov = V_GS − V_T`
+
+For linear operation:
+`|v_id| < √2 · V_ov`
+
+---
+
+## Design Specifications
+
+| Parameter      | Value  |
+| -------------- | ------ |
+| VDD            | 0.9 V  |
+| VSS            | -0.9 V |
+| Power          | 1.5 mW |
+| Tail Voltage   | -0.7 V |
+| Channel Length | 360 nm |
 
 ---
 
@@ -70,225 +65,104 @@ g_m = {2I_D}/{V_{ov}}
 
 The circuit consists of:
 
-* Two matched NMOS transistors (M1, M2)
-* Tail current source ( I_{SS} )
-* Drain resistors ( R_D )
-* Differential inputs
+* Two NMOS transistors (M1, M2)
+* Tail current source
+* Load resistors
+* Input voltages applied at gates
 
-The output is taken from the drain nodes.
-
----
-
-#  DC Analysis (Design Calculations)
-
-## 1. Tail Current
-
-[
-I_{SS} = \frac{P}{V_{DD} - V_{SS}} = \frac{1.5 \times 10^{-3}}{1.8}
-]
-
-[
-I_{SS} = 0.833 , mA
-]
+The output is taken from the drain terminals.
 
 ---
 
-## 2. Drain Current
+## DC Analysis
 
-[
-I_D = \frac{I_{SS}}{2} = 0.4165 , mA
-]
+Total current:
+`I_SS = P / (V_DD − V_SS)`
+`I_SS = 1.5 mW / 1.8 V = 0.833 mA`
 
----
+Drain current:
+`I_D = I_SS / 2`
+`I_D = 0.833 / 2 = 0.4165 mA`
 
-## 3. Load Resistance
+Load resistance:
+`R_D = V_DD / I_D`
+`R_D = 0.9 / (0.4165 × 10⁻³) ≈ 2.16 kΩ`
 
-[
-R_D = \frac{V_{DD}}{I_D} = \frac{0.9}{0.4165 \times 10^{-3}}
-]
+(Used value: 2.25 kΩ)
 
-[
-R_D \approx 2.16 , k\Omega
-]
+Voltages:
+`V_GS = 0 − (−0.7) = 0.7 V`
+`V_ov = V_GS − V_T = 0.7 − 0.36 = 0.34 V`
+`V_DS = 0 − (−0.7) = 0.7 V`
 
-Practical value used:
-
-[
-R_D = 2.25 , k\Omega
-]
-
----
-
-## 4. Bias Voltages
-
-[
-V_G = 0 , V, \quad V_S = -0.7 , V
-]
-
-[
-V_{GS} = 0.7 , V
-]
-
-Assuming ( V_T = 0.36 , V ):
-
-[
-V_{ov} = V_{GS} - V_T = 0.34 , V
-]
+Since
+`V_DS ≥ V_ov`
+both transistors operate in saturation.
 
 ---
 
-## 5. Saturation Check
+## Width Calculation
 
-[
-V_{DS} = 0 - (-0.7) = 0.7 , V
-]
+`W = (2 I_D L) / (μ_n C_ox V_ov²)`
 
-[
-V_{DS} > V_{ov} \Rightarrow 0.7 > 0.34 , \checkmark
-]
+`W = (2 × 0.4165×10⁻³ × 360×10⁻⁹) / (236.5×10⁻⁶ × (0.34)²)`
 
-Therefore Transistors operate in saturation
+`W ≈ 10.97 μm`
 
 ---
 
-## 6. Width Calculation
+## Transient Analysis
 
-[
-I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} V_{ov}^2
-]
+Differential input:
+`v_id = v_in1 − v_in2`
 
-[
-W = \frac{2 I_D L}{\mu_n C_{ox} V_{ov}^2}
-]
+Linear condition:
+`|v_id| < √2 · V_ov`
+`|v_id| < 1.414 × 0.34 ≈ 0.48 V`
 
-Substituting values:
-
-[
-W \approx 10.97 , \mu m
-]
-
----
-
-##  DC Results Summary
-
-| Parameter      | Value     |
-| -------------- | --------- |
-| ( I_{SS} )     | 0.833 mA  |
-| ( I_D )        | 0.4165 mA |
-| ( V_{GS} )     | 0.7 V     |
-| ( V_{DS} )     | 0.7 V     |
-| ( V_{ov} )     | 0.34 V    |
-| ( R_D )        | 2.25 kΩ   |
-| Output Voltage | -37 mV    |
-
----
-
-#  Transient Analysis
-
-## 1. Linear Range
-
-[
-|v_{id}| < \sqrt{2} \cdot V_{ov} = 0.48 , V
-]
-
----
-
-## 2. Case Analysis
-
-### Case 1: ( v_{id} = 200 , mV )
-
-[
-200 , mV < 480 , mV , \checkmark
-]
+### Case 1: Small Input (200 mV)
 
 * Output is sinusoidal
 * No distortion
-* Gain ≈ 3 V/V
 
----
-
-### Case 2: ( v_{id} = 600 , mV )
-
-[
-600 , mV > 480 , mV , \checkmark
-]
+### Case 2: Large Input (600 mV)
 
 * Output is clipped
-* One transistor OFF
-* Non-linear behavior
+* One transistor turns OFF
 
 ---
 
-##  Transient Summary
+## AC Analysis
 
-| Parameter | Linear     | Non-linear |
-| --------- | ---------- | ---------- |
-| Input     | 200 mV     | 600 mV     |
-| Output    | Sinusoidal | Distorted  |
-| Operation | Linear     | Non-linear |
+Gain:
+`A_v = 3.55 V/V`
 
----
+Gain in dB:
+`A_v(dB) = 20 log(3.55) ≈ 11 dB`
 
-#  AC Analysis
+Bandwidth:
+`f_-3dB ≈ 5.503 GHz`
 
-## 1. Simulated Results
-
-| Parameter | Value    |
-| --------- | -------- |
-| Gain      | 3.55 V/V |
-| Gain (dB) | 11 dB    |
-| Bandwidth | 5.5 GHz  |
-| UGB       | 19.5 GHz |
+Gain Bandwidth Product:
+`GBW = A_v × f_-3dB`
+`GBW = 3.55 × 5.503 GHz ≈ 19.5 GHz`
 
 ---
 
-## 2. Theoretical Gain
+## Result
 
-[
-g_m = \frac{2I_D}{V_{ov}} = 2.45 , mA/V
-]
-
-[
-A_v = g_m \cdot R_D
-]
-
-[
-A_v = 5.51 , V/V
-]
+* Differential amplifier is successfully designed
+* DC biasing is correct
+* Linear operation observed for small signals
+* Non-linear behavior observed for large signals
+* Gain and bandwidth obtained as expected
 
 ---
 
-## 3. Gain Comparison
+## Conclusion
 
-| Type        | Gain     |
-| ----------- | -------- |
-| Theoretical | 5.51 V/V |
-| Simulated   | 3.55 V/V |
-
----
-
-## 4. Reason for Difference
-
-* Channel length modulation
-* Mobility degradation
-* Parasitic capacitances
-* Non-ideal MOS behavior
-
----
-
-#  Conclusion
-
-The MOS differential amplifier was successfully designed and analyzed.
-
-### Final Observations:
-
-* Correct DC biasing achieved
-* Saturation condition verified
-* Linear operation confirmed for small inputs
-* Non-linearity observed for large inputs
-* Moderate gain with very high bandwidth achieved
-
-The results closely match theoretical expectations, validating the design.
+The MOS differential amplifier was designed and analyzed using LTspice.
+The circuit satisfies the required conditions and shows proper operation in DC, transient, and AC analysis.
 
 ---
 
